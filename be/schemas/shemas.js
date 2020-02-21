@@ -3,7 +3,6 @@ const userSchema = {
     
     "type": "object",
     "properties": {         
-                 
         "login": {
         "type": "string",
         "minLength": 1,
@@ -14,7 +13,7 @@ const userSchema = {
         "minLength": 1,
         "maxLength": 99
         }  
-      }    
+    }    
   }
   
   module.exports = userSchema;

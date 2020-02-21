@@ -15,7 +15,8 @@ router.get('/', function(req, res, next) {
 
 router.post("/login", async (req, res) => {
   
-  try {    
+  try { 
+    console.log(req.body);   
     const {login, pwd} = req.body; 
     const validate = ajv.compile(userSchema);
     const valid = validate({

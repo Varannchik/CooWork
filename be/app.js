@@ -53,12 +53,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.use(
-  cors({
-    credentials: true,
-    origin: ["http://localhost:3000"],
-    optionsSuccessStatus: 200
-  })
-);
+
 
 module.exports = app;
